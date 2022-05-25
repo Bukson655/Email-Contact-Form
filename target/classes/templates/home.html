@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head(title='Strona główna - Dunder Miflin')">
+  <title>Main page</title>
+</head>
+<body>
+  <div th:replace="fragments :: header">Header</div>
+  <main class="main">
+    <h1>Nasza historia</h1>
+    <p>&emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Mauris ultricies sapien non urna malesuada eleifend.
+      Praesent pulvinar varius vehicula. Suspendisse ut egestas ipsum, vel sollicitudin erat.
+      Vivamus sodales fermentum enim, at facilisis sem porttitor at.</p><br/>
+    <h2>Nasz papier</h2>
+    <p>&emsp;&emsp;Aenean posuere nunc et quam aliquam, eleifend porttitor lorem efficitur.
+      Curabitur arcu justo, suscipit vel pretium id, ultrices vitae magna.
+      Donec commodo massa vel aliquet semper.</p><br/>
+    <h2>Nasi pracownicy</h2>
+    <p>&emsp;&emsp;Duis in augue sit amet dui commodo hendrerit.
+      Nulla faucibus mattis elit nec dapibus. Nullam commodo neque id risus consequat interdum.
+      Morbi consequat gravida turpis, ac fringilla libero vestibulum id.
+      Aliquam massa enim, dictum id arcu ac, ullamcorper mollis magna.
+      Praesent risus ante, tempor ut auctor quis, malesuada eget dolor.
+      Morbi tempor, est at pulvinar placerat, ipsum dui aliquet neque, eu luctus lacus orci in lorem.</p>
+  </main>
+  <footer th:replace="fragments :: footer">Footer</footer>
+</body>
+</html>

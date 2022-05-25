@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="fragments :: head(title='Potwierdzenie')">
+    <title>Confirmation</title>
+  </head>
+  <body>
+    <div th:replace="fragments :: header">Header</div>
+    <main class="main">
+      <div class="confirm-info">
+        <h1>Wysłano maila poprawnie.</h1>
+        <p>Dziękujemy za kontakt.</p>
+        <a href="/">Powrót do strony głównej</a>
+      </div>
+    </main>
+    <footer th:replace="fragments :: footer">Footer</footer>
+  </body>
+</html>

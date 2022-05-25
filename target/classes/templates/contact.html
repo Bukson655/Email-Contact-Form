@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head(title='Kontakt z Dunder Mifflin')">
+  <title>Contact</title>
+</head>
+<body>
+<div th:replace="fragments :: header">Header</div>
+<main class="main">
+  <h2>Skontaktuj się z nami</h2>
+  <form method="post" action="/wyslij">
+    <div class="mb-3">
+      <label for="name" class="form-label">Imię:</label>
+      <input type="text" name="name" class="form-control" id="name" placeholder="Wpisz swoje imię" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Wpisz swój e-mail" required>
+    </div>
+    <div class="mb-3">
+      <label for="content" class="form-label">Treść:</label>
+      <input type="text" name="content" class="form-control" id="content" placeholder="Wpisz swoją wiadomość" required>
+    </div>
+    <div class="mb-3 form-check">
+      <label class="form-check-label" for="confirmation">Wyślij mi potwierdzenie</label>
+      <input type="checkbox" name="confirmation" class="form-check-input" id="confirmation">
+    </div>
+    <button type="submit" class="btn btn-dark">Wyślij</button>
+  </form>
+</main>
+<footer th:replace="fragments :: footer">Footer</footer>
+</body>
+</html>
